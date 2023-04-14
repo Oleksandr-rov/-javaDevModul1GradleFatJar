@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'checkstyle'
 }
 
 group 'com.goit'
@@ -26,4 +27,8 @@ jar {
 
 test {
     useJUnitPlatform()
+}
+
+javadoc {
+    source = sourceSets.main.allJava
 }

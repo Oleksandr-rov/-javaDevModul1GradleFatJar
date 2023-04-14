@@ -7,6 +7,14 @@ import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * class Main
+ * This is a entry point of application
+ * For detailed info see {@link UserNameDto}
+ * @see UserNameDto
+ *
+ */
+
 public class Main {
     public static void main(String[] args) {
         try (InputStream stream = Main.class.getClassLoader().getResourceAsStream("users.json")) {
@@ -20,5 +28,16 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     *
+     * @param value
+     * @return some return values
+     * @throws Exception - if .....
+     */
+    public String doSmth(String value) throws Exception {
+        //TODO
+        return "";
     }
 }
